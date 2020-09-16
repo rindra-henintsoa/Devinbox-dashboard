@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Dashboard - Devinbox Admin</title>
+        <title>Tables - Devinbox Admin</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
 
@@ -17,7 +17,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
     </head>
-    <body class="sb-nav-fixed cours-presentielle">
+    <body class="sb-nav-fixed DB-Client">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">Devinbox Dashboard</a><button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button
             ><!-- Navbar Search-->
@@ -46,21 +46,22 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            
                             <a class="nav-link" href="index.html"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Dashboard</a>
-                        
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts"
+                                Dashboard</a
+                            >
+                            
+                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Gestion client 
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                             ></a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="tables.html">Suivi client</a><a class="nav-link" href="DB-Client.html">database clients </a></nav>
+                                <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="tables.html">Suivi client</a><a class="nav-link" href="DB-Client.html">database clients </a>
+                                </nav>
                             </div>
 
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages"
+                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                                Gestion des étudiants
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
@@ -84,9 +85,7 @@
                                     </a>
                                 </nav>
                             </div>
-
-                  
-                        </div>
+                            
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
@@ -97,157 +96,174 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Dashboard</h1>
+                        <h1 class="mt-4">Database clients</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Dashboard</li>
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item active">Tables</li>
                         </ol>
-                        <div class="row">
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body">Primary Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">Warning Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-success text-white mb-4">
-                                    <div class="card-body">Success Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body">Danger Card</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="card mb-4">
-                                    <div class="card-header"><i class="fas fa-chart-area mr-1"></i>Area Chart Example</div>
-                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="card mb-4">
-                                    <div class="card-header"><i class="fas fa-chart-bar mr-1"></i>Bar Chart Example</div>
-                                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
-                                </div>
-                            </div>
-                        </div>
-                        
                         <div class="card mb-4">
-                            <div class="card-header"><i class="fas fa-table mr-1"></i>Liste des opérations de caisse</div>
+                            <div class="card-body">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>.</div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header"><i class="fas fa-table mr-1"></i>Cours en ligne </div>
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th>Type</th>
-                                                <th>Numéro client</th>
-                                                <th>Nom</th>
-                                                <th>Coordonnées</th>
-                                                <th>Offres & Services consommées</th>
-                                                <th>Début Abonnement</th>
-                                                <th>Fin Abonnement</th>
-                                                <th>Montant</th>
-                                                <th>N° Facture</th>
+                                                <th>Responsable</th>
+                                                <th>Statut</th>
+                                                <th>Nom Complet</th>
+                                                <th>Téléphone</th>
+                                                <th>Mail</th>
+                                                <th>Module</th>
+                                                <th>Date buttoir</th>
                                                 <th>Notes</th>
+                                                <th>Attestation</th>
                                             </tr>
                                         </thead>
                                         <tfoot>
                                             <tr>
-                                                <th>Type</th>
-                                                <th>Numéro client</th>
-                                                <th>Nom</th>
-                                                <th>Coordonnées</th>
-                                                <th>Offres & Services consommées</th>
-                                                <th>Début Abonnement</th>
-                                                <th>Fin Abonnement</th>
-                                                <th>Montant</th>
-                                            <th>N° Facture</th>
+                                                <th>Responsable</th>
+                                                <th>Statut</th>
+                                                <th>Nom Complet</th>
+                                                <th>Téléphone</th>
+                                                <th>Mail</th>
+                                                <th>Module</th>
+                                                <th>Date buttoir</th>
                                                 <th>Notes</th>
+                                                <th>Attestation</th>
                                             </tr>
                                         </tfoot>
                                         <tbody>
                                             
                                             <tr>
                                                 <td>
-                                                    <label class="switch">
-                                                      <input type="checkbox">
-                                                      <span class="slider round"></span>
-                                                    </label>
+                                                   Resp 
                                                 </td>
-                                                <td>219</td>
-                                                <td>John Snow</td>
-                                                <td>Winterfell</td>
-                                                <td>Achat Eau vive</td>
-                                                <td>08/09/2020</td>
-                                                <td>20/09/2020</td>
-                                                <td>$500</td>
-                                                <td>n° 1</td>
-                                                <td>noté</td>
-                                            </tr>
-
-                                            <tr>
                                                 <td>
                                                     <label class="switch">
                                                       <input type="checkbox">
                                                       <span class="slider round"></span>
                                                     </label>
                                                 </td>
-                                                <td>220</td>
-                                                <td>Deneyris Targarian</td>
-                                                <td>Targarian kingdom</td>
-                                                <td>Achat Eau vive</td>
-                                                <td>08/09/2020</td>
-                                                <td>20/09/2020</td>
-                                                <td>$300</td>
-                                                <td>n° 2</td>
-                                                <td>noté</td>
-                                            </tr>
-                                            <tr>
+                                                <td>Nom</td>
+                                                <td>Tél</td>
+                                                <td>Mail</td>
+                                                <td>Mod</td>
+                                                <td>Date</td>
+                                                <td>Notes</td>
                                                 <td>
                                                     <label class="switch">
                                                       <input type="checkbox">
                                                       <span class="slider round"></span>
                                                     </label>
                                                 </td>
-                                                <td>221</td>
-                                                <td>Aria Stark</td>
-                                                <td>Sans visage</td>
-                                                <td>Achat Eau vive</td>
-                                                <td>08/09/2020</td>
-                                                <td>20/09/2020</td>
-                                                <td>$500</td>
-                                                <td>n° 3</td>
-                                                <td>noté</td>
                                             </tr>
 
+                                            <tr>
+                                                <td>
+                                                   Resp 
+                                                </td>
+                                                <td>
+                                                    <label class="switch">
+                                                      <input type="checkbox">
+                                                      <span class="slider round"></span>
+                                                    </label>
+                                                </td>
+                                                <td>Nom</td>
+                                                <td>Tél</td>
+                                                <td>Mail</td>
+                                                <td>Mod</td>
+                                                <td>Date</td>
+                                                <td>Notes</td>
+                                                <td>
+                                                    <label class="switch">
+                                                      <input type="checkbox">
+                                                      <span class="slider round"></span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                   Resp 
+                                                </td>
+                                                <td>
+                                                    <label class="switch">
+                                                      <input type="checkbox">
+                                                      <span class="slider round"></span>
+                                                    </label>
+                                                </td>
+                                                <td>Nom</td>
+                                                <td>Tél</td>
+                                                <td>Mail</td>
+                                                <td>Mod</td>
+                                                <td>Date</td>
+                                                <td>Notes</td>
+                                                <td>
+                                                    <label class="switch">
+                                                      <input type="checkbox">
+                                                      <span class="slider round"></span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+ 
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                        
+
+                        <div class="modif">
+                                <i class="fa fa-edit"></i>Modifier une information
+                        </div>
+
+                        <div class="remove">
+                                <i class="fa fa-trash"></i>Supprimer une information
+                        </div>
+
+                        <div id="dialog-confirm" class="deleting-confirm">
+                            <h2><center>Caisse</center></h2>
+                            <ul>
+
+                                <li class="dialog-item">
+                                    <div class="item-wrap">
+                                        <span class="caisse-titre">Nom</span>
+                                    </div>
+                                    <div class="item-wrap">
+                                        <span class="caisse-content">Aria Stark</span>
+                                    </div>
+                                </li>
+                                
+                                <li class="dialog-item">
+                                    <div class="item-wrap">
+                                        <span class="caisse-titre">Coordonnées</span>
+                                    </div>
+                                    <div class="item-wrap">
+                                        <span class="caisse-content">Sans visage</span>
+                                    </div>
+                                </li>
+
+                                <li class="dialog-item">
+                                    <div class="item-wrap">
+                                        <span class="caisse-titre">Offres & Services consommées</span>
+                                    </div>
+                                    <div class="item-wrap">
+                                        <span class="caisse-content">Achat Eau vive</span>
+                                    </div>
+                                </li>
+
+                                <li class="dialog-item">
+                                    <div class="item-wrap">
+                                        <span class="caisse-titre">Notes</span>
+                                    </div>
+                                    <div class="item-wrap">
+                                        <span class="caisse-content">noté</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
@@ -269,16 +285,12 @@
          
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-
+        
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
         <script src="assets/demo/datatables-demo.js"></script>
-
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

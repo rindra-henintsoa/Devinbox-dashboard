@@ -40,16 +40,6 @@ $(document).ready(function() {
         buttons: {
             "soumettre": {
                 click: function() {
-                     //adding formular values                
-                $("#dataTable>tbody:last").append("<tr><td>" + $("#Numero_client").val() + "</td><td>" 
-                                                                + $("#Nom_client").val() + "</td><td>" 
-                                                                + $("#Coordonnees").val() + "</td><td>"
-                                                                + $("#Offres").val() + "</td><td>"
-                                                                + $("#Debut").val() + "</td><td>"
-                                                                + $("#fin").val() + "</td><td>"
-                                                                + $("#Montant").val() + "</td><td>"
-                                                                + $("#facture").val() + "</td><td>"
-                                                                + $("#Note").val() +"</td></tr>");
                     $(this).dialog('close');
                         },
                         text: 'soumettre',
@@ -66,7 +56,7 @@ $(document).ready(function() {
           }
     }); 
 
-    $(".add").click(function() {
+    $(".ajout").click(function() {
         $(".form").dialog("open");
     });
 
@@ -74,5 +64,7 @@ $(document).ready(function() {
     $ ( "#Debut").datepicker ();
 
     $ ( "#fin").datepicker ();
+
+     $ ( "#date").datepicker ();
 
 });

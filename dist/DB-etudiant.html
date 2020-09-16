@@ -17,7 +17,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
     </head>
-    <body class="sb-nav-fixed">
+    <body class="sb-nav-fixed DB-Client">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">Devinbox Dashboard</a><button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button
             ><!-- Navbar Search-->
@@ -57,7 +57,8 @@
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                             ></a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="tables.html">Suivi client</a><a class="nav-link" href="DB-Client.html">database clients </a></nav>
+                                <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="tables.html">Suivi client</a><a class="nav-link" href="DB-Client.html">database clients </a>
+                                </nav>
                             </div>
 
                              <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages"
@@ -84,8 +85,7 @@
                                     </a>
                                 </nav>
                             </div>
-
-                        </div>
+                            
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
@@ -96,7 +96,7 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Tables</h1>
+                        <h1 class="mt-4">Database clients</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                             <li class="breadcrumb-item active">Tables</li>
@@ -105,35 +105,25 @@
                             <div class="card-body">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>.</div>
                         </div>
                         <div class="card mb-4">
-                            <div class="card-header"><i class="fas fa-table mr-1"></i>Liste des opérations de caisse</div>
+                            <div class="card-header"><i class="fas fa-table mr-1"></i>database etudiants </div>
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th>Type</th>
-                                                <th>Numéro client</th>
-                                                <th>Nom</th>
-                                                <th>Coordonnées</th>
-                                                <th>Offres & Services consommées</th>
-                                                <th>Début Abonnement</th>
-                                                <th>Fin Abonnement</th>
-                                                <th>Montant</th>
-                                                <th>N° Facture</th>
+                                                <th>Nom complet</th>
+                                                <th>Téléphone</th>
+                                                <th>Mail</th>
+                                                <th>Module</th>
                                                 <th>Notes</th>
                                             </tr>
                                         </thead>
                                         <tfoot>
                                             <tr>
-                                                <th>Type</th>
-                                                <th>Numéro client</th>
-                                                <th>Nom</th>
-                                                <th>Coordonnées</th>
-                                                <th>Offres & Services consommées</th>
-                                                <th>Début Abonnement</th>
-                                                <th>Fin Abonnement</th>
-                                                <th>Montant</th>
-                                            <th>N° Facture</th>
+                                                <th>Nom complet</th>
+                                                <th>Téléphone</th>
+                                                <th>Mail</th>
+                                                <th>Module</th>
                                                 <th>Notes</th>
                                             </tr>
                                         </tfoot>
@@ -141,57 +131,39 @@
                                             
                                             <tr>
                                                 <td>
-                                                    <label class="switch">
-                                                      <input type="checkbox">
-                                                      <span class="slider round"></span>
-                                                    </label>
+                                                   Nom 
                                                 </td>
-                                                <td>219</td>
-                                                <td>John Snow</td>
-                                                <td>Winterfell</td>
-                                                <td>Achat Eau vive</td>
-                                                <td>08/09/2020</td>
-                                                <td>20/09/2020</td>
-                                                <td>$500</td>
-                                                <td>n° 1</td>
-                                                <td>noté</td>
+                                                <td>
+                                                    Tél
+                                                </td>
+                                                <td>Mail</td>
+                                                <td>Mod</td>
+                                                <td>Notes</td>
                                             </tr>
 
                                             <tr>
-                                                 <td>
-                                                    <label class="switch">
-                                                      <input type="checkbox">
-                                                      <span class="slider round"></span>
-                                                    </label>
+                                                <td>
+                                                   Nom 
                                                 </td>
-                                                <td>220</td>
-                                                <td>Deneyris Targarian</td>
-                                                <td>Targarian kingdom</td>
-                                                <td>Achat Eau vive</td>
-                                                <td>08/09/2020</td>
-                                                <td>20/09/2020</td>
-                                                <td>$300</td>
-                                                <td>n° 2</td>
-                                                <td>noté</td>
+                                                <td>
+                                                    Tél
+                                                </td>
+                                                <td>Mail</td>
+                                                <td>Mod</td>
+                                                <td>Notes</td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <label class="switch">
-                                                      <input type="checkbox">
-                                                      <span class="slider round"></span>
-                                                    </label>
+                                                   Nom 
                                                 </td>
-                                                <td>221</td>
-                                                <td>Aria Stark</td>
-                                                <td>Sans visage</td>
-                                                <td>Achat Eau vive</td>
-                                                <td>08/09/2020</td>
-                                                <td>20/09/2020</td>
-                                                <td>$500</td>
-                                                <td>n° 3</td>
-                                                <td>noté</td>
+                                                <td>
+                                                    Tél
+                                                </td>
+                                                <td>Mail</td>
+                                                <td>Mod</td>
+                                                <td>Notes</td>
                                             </tr>
-
+ 
                                         </tbody>
                                     </table>
                                 </div>
@@ -199,107 +171,62 @@
                         </div>
 
                         <div class="ajout">
-                                <i class="fa fa-plus-circle"></i>Ajouter une opération
+                                <i class="fa fa-plus-circle"></i>Ajouter une information
                         </div>
-                        <div class="remove">
-                                <i class="fa fa-trash"></i>Supprimer une opération
+                        <div class="buttons">
+                                    <button class="add">add</button>
+                                    <button class="edit">edit</button>
+                                    <button class="del">Suppr</button>
                         </div>
 
                         <form class="form">
-                            <h2>Veuiller remplir le formulaire pour ajouter une opération</h2>
-                            <div class="form-row">
-                                    <div class="col">
-                                        <label>
-                                            Numéro client
-                                        </label>
-                                        <input type="text" class="form-control" name="Numéro client">
-                                    </div>
-
-                                    <div class="col">
-                                        <label>
-                                            Nom
-                                        </label>
-                                        <input type="text" class="form-control" name="Nom client">
-                                    </div>
-                            </div>
-
-                            <div class="form-row">
-                                    <div class="col">
-                                        <label>
-                                            Coordonnées
-                                        </label>
-                                        ​<textarea id="Coordonnées"></textarea>
-                                    </div>
-
-                                    <div class="col">
-                                        <label>
-                                            Offres & Services
-                                        </label>
-                                        <textarea id="Offres"></textarea>
-                                    </div>
-                            </div>
+                            <h2><center>Veuiller remplir le formulaire la base de donnée du client</center></h2>
                             
                             <div class="form-row">
                                     <div class="col">
                                         <label>
-                                            Début abonnement
+                                            Nom complet
                                         </label>
-                                        <input type="text" class="form-control" id="Debut">
+                                        <input type="email" class="form-control" name="Nom">
                                     </div>
 
                                     <div class="col">
                                         <label>
-                                            Fin abonnement
+                                            Téléphone
                                         </label>
-                                        <input type="text" class="form-control" id="fin">
-                                    </div>  
+                                        <input type="number" class="form-control" name="Téléphone">
+                                    </div>
                             </div>
-                             
-                            <div class="form-row">       
+
+                            <div class="form-row">
                                     <div class="col">
                                         <label>
-                                            Montant
+                                            Mail
                                         </label>
-                                        <input type="Number" class="form-control" id="fin">
-                                    </div>  
+                                        <input type="email" class="form-control" name="Mail">
+                                    </div>
 
                                     <div class="col">
                                         <label>
-                                            N° facture
+                                            Module
                                         </label>
-                                        <input type="text" class="form-control" id="fin">
+                                        <input type="text" class="form-control" name="Mail">
                                     </div>
                             </div>
-                                    
-                                    <div class="form-center col-md-12">
+
+                            <div class="form-center col-md-12">
                                         <label>
                                             Notes
                                         </label>
                                         <textarea id="Note"></textarea>
-                                    </div>
-                            
+                            </div>
+
+
                         </form>
 
-                        <div id="dialog-confirm">
+                        <div id="dialog-confirm" class="deleting-confirm">
                             <h2><center>Caisse</center></h2>
                             <ul>
-                                <li class="dialog-item">
-                                        <div class="item-wrap">
-                                            <span class="caisse-titre">Type</span>
-                                        </div>
-                                        <div class="item-wrap">
-                                            <span class="caisse-content">1</span>
-                                        </div>
-                                </li>
-                                
-                                <li class="dialog-item">
-                                    <div class="item-wrap">
-                                        <span class="caisse-titre">Numéro client</span>
-                                    </div>
-                                    <div class="item-wrap">
-                                        <span class="caisse-content">221</span>
-                                    </div>
-                                </li>
 
                                 <li class="dialog-item">
                                     <div class="item-wrap">
@@ -326,42 +253,6 @@
                                     <div class="item-wrap">
                                         <span class="caisse-content">Achat Eau vive</span>
                                     </div>
-                                </li>
-
-                                <li class="dialog-item">
-                                    <div class="item-wrap">
-                                        <span class="caisse-titre">Début Abonnement</span>
-                                    </div>
-                                    <div class="item-wrap">
-                                        <span class="caisse-content">08/09/2020</span>
-                                    </div>
-                                </li>
-
-                                <li class="dialog-item">
-                                    <div class="item-wrap">
-                                        <span class="caisse-titre">Fin Abonnement</span>
-                                    </div>
-                                    <div class="item-wrap">
-                                        <span class="caisse-content">20/09/2020</span>
-                                    </div>
-                                </li>
-
-                                <li class="dialog-item">
-                                    <div class="item-wrap">
-                                        <span class="caisse-titre">Montant</span>
-                                    </div>
-                                    <div class="item-wrap">
-                                        <span class="caisse-content">$500</span>
-                                    </div>
-                                </li>
-
-                                <li class="dialog-item">
-                                    <div class="item-wrap">
-                                        <span class="caisse-titre">N° Facture</span>
-                                    </div>
-                                    <div class="item-wrap">
-                                        <span class="caisse-content">n° 3</span>
-                                    </div>              
                                 </li>
 
                                 <li class="dialog-item">
